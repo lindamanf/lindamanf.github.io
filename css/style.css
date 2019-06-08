@@ -5,11 +5,19 @@ body {
     margin: 0
 }
 
-header {
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.orange-bg {
     color: #fff;
     background: url(../img/bg.png);
     background-size: cover;
 }
+
+/* header */
 
 header h1 {
     margin-top: 0;
@@ -24,10 +32,13 @@ header p {
 }
 
 header .container {
-    width: 820px;
-    margin: 0 auto;
-    padding: 60px 0;
-    /* background: pink; */
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .btn {
