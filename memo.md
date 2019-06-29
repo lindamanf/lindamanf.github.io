@@ -92,6 +92,7 @@
 ### 1つ目の特徴のマークアップ
 
 ```
+[index.html]
 <div class="container">
     <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
     <section class="feature">
@@ -107,6 +108,7 @@
 ### コピーして残りの特徴を作成
 
 ```
+[index.html]
 <div class="container">
     <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
     <section class="feature">
@@ -136,6 +138,7 @@
 ### コンテナスタイルの作成
 
 ```
+[style.css]
 .container {
     width: 820px;
     margin: 0 auto;
@@ -150,6 +153,7 @@
 ### feature内の要素のスタイル調整
 
 ```
+[style.css]
 /* features */
 .feature h1 {
     font-weight: normal;
@@ -166,6 +170,7 @@
 nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は説明文を左へ移動する。
 
 ```
+[style.css]
 .feature:nth-of-type(odd) .desc {
     float: right;
     padding-left: 40px;
@@ -174,5 +179,43 @@ nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は
 .feature:nth-of-type(even) .desc {
     float: left;
     padding-right: 40px;
+}
+```
+
+## 11 特徴紹介セクションを完成させよう
+
+### セクションタイトルの余白調整
+
+上下のマージンを指定
+
+```
+[style.css]
+.section-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+```
+
+### 特徴部分の余白調整
+
+「:not()」で引数以外の要素に適用される
+引数の値に「:last-child」を指定することで、最終要素にステイルを適用出来なくできる
+
+```
+[style.css]
+.feature:not(:last-child) {
+    margin-bottom: 60px;
+}
+```
+
+### 特徴の説明文がはみ出したときの対応
+
+```
+[style.css]
+.feature {
+    overflow :hidden;
 }
 ```

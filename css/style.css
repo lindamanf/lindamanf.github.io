@@ -15,6 +15,8 @@ body {
     text-align: center;
     font-weight: normal;
     font-size: 24px;
+    margin-bottom: 60px;
+    margin-top: 0px;
 }
 
 .section-title::after {
@@ -90,4 +92,12 @@ header img {
 .feature:nth-of-type(even) .desc {
     float: left;
     padding-right: 40px;
+}
+
+.feature:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.feature {
+    overflow :hidden;
 }
