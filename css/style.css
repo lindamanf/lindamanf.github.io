@@ -5,6 +5,21 @@ body {
     margin: 0
 }
 
+/* features */
+.section-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.section-title::after {
+    content: attr(data-subtitle);
+    display: block;
+    font-size: 16px;
+    color: #aaa;
+    padding-top: 10px;
+}
+
 header {
     color: #fff;
     background: url(../img/bg.png);
@@ -50,19 +65,4 @@ header img {
 
 .btn:hover {
     opacity: 1.0;
-}
-
-/* features */
-.features h1 {
-    text-align: center;
-    font-weight: normal;
-    font-size: 24px;
-}
-
-.features h1::after {
-    content: attr(data-subtitle);
-    display: block;
-    font-size: 16px;
-    color: #aaa;
-    padding-top: 10px;
 }

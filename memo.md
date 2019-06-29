@@ -47,3 +47,40 @@
     padding-top: 10px;
 }
 ```
+
+## 08 スタイルを再利用できるようにしよう
+
+前項で作成したスタイルは、別セクションでも共通で使うため再利用できるようにする。
+
+### セクションタイトルにクラス追加
+
+```
+[index.html]
+<div class="container">
+    <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
+</div>
+```
+
+### セクションタイトルのスタイルを共通化
+
+
+.feature h1部分を変更する。
+また、共通化部分はCSSの上部に置くと良い。
+
+```
+[style.css]
+/* features */
+.section-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.section-title::after {
+    content: attr(data-subtitle);
+    display: block;
+    font-size: 16px;
+    color: #aaa;
+    padding-top: 10px;
+}
+```
