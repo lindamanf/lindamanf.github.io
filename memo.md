@@ -132,3 +132,16 @@
     </section>
 </div>
 ```
+
+### コンテナスタイルの作成
+
+```
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+```
+
+## 10 要素を左右に振り分けていこう
+
