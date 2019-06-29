@@ -84,3 +84,51 @@
     padding-top: 10px;
 }
 ```
+
+## 09 特徴紹介セクションを作ろう
+
+特徴紹介の3つのセクションを作成する
+
+### 1つ目の特徴のマークアップ
+
+```
+<div class="container">
+    <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
+    <section class="feature">
+        <img src="img/feature1.png"/ width="420" height="270" alt="特徴1">
+        <div class="desc">
+            <h1>すいごい特徴があるよ！</h1>
+            <p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
+        </div>
+    </section>
+</div>
+```
+
+### コピーして残りの特徴を作成
+
+```
+<div class="container">
+    <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
+    <section class="feature">
+        <img src="img/feature1.png"/ width="420" height="270" alt="特徴1">
+        <div class="desc">
+            <h1>すいごい特徴があるよ！</h1>
+            <p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
+        </div>
+    </section>
+    <section class="feature">
+        <img src="img/feature2.png"/ width="420" height="270" alt="特徴2">
+        <div class="desc">
+            <h1>すいごい特徴があるよ！</h1>
+            <p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
+        </div>
+    </section>
+    <section class="feature">
+        <img src="img/feature3.png"/ width="420" height="270" alt="特徴3">
+        <div class="desc">
+            <h1>すいごい特徴があるよ！</h1>
+            <p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
+        </div>
+    </section>
+</div>
+```

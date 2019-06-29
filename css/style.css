@@ -5,6 +5,12 @@ body {
     margin: 0
 }
 
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 /* features */
 .section-title {
     text-align: center;
