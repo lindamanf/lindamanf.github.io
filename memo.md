@@ -145,3 +145,34 @@
 
 ## 10 要素を左右に振り分けていこう
 
+特徴要素を左右に振り分けする。
+
+### feature内の要素のスタイル調整
+
+```
+/* features */
+.feature h1 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.feature .desc {
+    width: 360px;
+}
+```
+
+### 偶数奇数で左右分けする
+
+nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は説明文を左へ移動する。
+
+```
+.feature:nth-of-type(odd) .desc {
+    float: right;
+    padding-left: 40px;
+}
+
+.feature:nth-of-type(even) .desc {
+    float: left;
+    padding-right: 40px;
+}
+```
