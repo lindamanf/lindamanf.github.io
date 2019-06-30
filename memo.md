@@ -311,6 +311,7 @@ flexboxクラスを持つdivタグでsectionタグを囲む
 ### flexboxのCSSを作成
 
 ```
+[style.css]
 .voices .flexbox {
     display: flex;
     justify-content: space-between;
@@ -325,6 +326,7 @@ flexboxクラスを持つdivタグでsectionタグを囲む
 ### voice内の要素の調整
 
 ```
+[style.css]
 .voice {
     width: 250px;
     background: #fff;
@@ -338,5 +340,54 @@ flexboxクラスを持つdivタグでsectionタグを囲む
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+```
+
+### 14 利用者の声セクションを完成させよう
+
+利用者の声のデザインの微調整を行います。
+
+### Flexbox内の調整
+
+box-sizing、画像の位置の調整
+
+```
+[style.css]
+.voice {
+    width: 250px;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 60px 40px 25px;
+}
+
+.voice img {
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -55px;
+}
+```
+
+Flexbox内のタイトルの調整
+
+```
+[style.css]
+.voice h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+```
+
+セクションタイトルのマージン調整
+
+```
+[style.css]
+.voices .section-title {
+    margin-bottom: 95px;
 }
 ```
