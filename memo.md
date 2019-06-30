@@ -391,3 +391,30 @@ Flexbox内のタイトルの調整
     margin-bottom: 95px;
 }
 ```
+
+## 15_最後のセクションを作っていこう
+
+call-to-actionのセクションを作成
+
+### call-to-actionセクションのマークアップ
+
+```
+[index.html]
+<section class="call-to-action orange-bg">
+    <div class="container">
+      <h1 class="section-title">Dotinstall Paneを使ってみよう！</h1>
+      <a href="#" target="_blank" class="btn">詳細を見る <i class="fas fa-external-link-alt"></i></a>
+    </div>
+</section>
+```
+
+### call-to-actionセクションのスタイリング
+
+```
+[style.css]
+/* call-to-action */
+.call-to-action {
+    text-align: center;
+    margin-bottom: 15px;
+}
+```
