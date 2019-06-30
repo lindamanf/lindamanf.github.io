@@ -219,3 +219,56 @@ nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は
     overflow :hidden;
 }
 ```
+
+## 利用者の声作成
+
+利用者の声のマークアップを行います。
+
+### 枠組み、タイトルの作成
+
+特徴の流用をする
+
+```
+[index.html]
+<section class="voices">
+    <div class="container"></div>
+<section>
+
+[style.css]
+/* voices */
+.voices {
+    background: #f8f8f8;
+}
+```
+
+### 利用者の声を3つ作成する。
+
+こちらも特徴と同じ構造で記述
+
+```
+[index.html]
+<div class="container">
+    <h1 data-subtitle="- Voices -" class="section-title">利用者の声</h1>
+    <section>
+    <img src="img/user1.png" width="90" height="90" alt="利用者A">
+    <h1>利用者A</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+    <section>
+    <img src="img/user2.png" width="90" height="90" alt="利用者B">
+    <h1>利用者B</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+    <section>
+    <img src="img/user3.png" width="90" height="90" alt="利用者C">
+    <h1>利用者C</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+</div>
+```
