@@ -418,3 +418,28 @@ call-to-actionのセクションを作成
     margin-bottom: 15px;
 }
 ```
+
+## 16 ウェブサイトを完成させよう
+
+フッターの作成
+
+### フッターのマークアップ
+
+```
+[index.html]
+<footer>
+    <p>&copy; dotinstall.com</p>
+</footer>
+```
+
+### フッターのスタイリング
+
+```
+[style.css]
+/* footer */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: #aaa;
+}
+```
