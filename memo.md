@@ -249,21 +249,21 @@ nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は
 [index.html]
 <div class="container">
     <h1 data-subtitle="- Voices -" class="section-title">利用者の声</h1>
-    <section>
+    <section class="voice">
     <img src="img/user1.png" width="90" height="90" alt="利用者A">
     <h1>利用者A</h1>
     <p>
         良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
     </p>
     </section>
-    <section>
+    <section class="voice">
     <img src="img/user2.png" width="90" height="90" alt="利用者B">
     <h1>利用者B</h1>
     <p>
         良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
     </p>
     </section>
-    <section>
+    <section class="voice">
     <img src="img/user3.png" width="90" height="90" alt="利用者C">
     <h1>利用者C</h1>
     <p>
@@ -271,4 +271,72 @@ nth-of-typeを使用して、偶数番目は説明文を右へ、奇数番目は
     </p>
     </section>
 </div>
+```
+
+## Flexboxを使った配置
+
+利用者の声をFlexboxを使って配置する。
+
+### Flexbox用のコンテナ作成
+
+flexboxクラスを持つdivタグでsectionタグを囲む
+
+```
+[index.html]
+<div class="flexbox">
+    <section class="voice">
+    <img src="img/user1.png" width="90" height="90" alt="利用者A">
+    <h1>利用者A</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+    <section class="voice">
+    <img src="img/user2.png" width="90" height="90" alt="利用者B">
+    <h1>利用者B</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+    <section class="voice">
+    <img src="img/user3.png" width="90" height="90" alt="利用者C">
+    <h1>利用者C</h1>
+    <p>
+        良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
+    </p>
+    </section>
+</div>
+```
+
+### flexboxのCSSを作成
+
+```
+.voices .flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.voice {
+    width: 250px;
+    background: #fff;
+}
+```
+
+### voice内の要素の調整
+
+```
+.voice {
+    width: 250px;
+    background: #fff;
+    position: relative;
+}
+
+.voice img {
+    border-radius: 50%;
+    border: 10px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
 ```
