@@ -37,8 +37,14 @@
     <h1 data-subtitle="- Features -">Dotinstall Paneの特徴</h1>
 </div>
 ```
-```
+
 [style.css]
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 .features h1::after {
     content: attr(data-subtitle);
     display: block;
@@ -59,17 +65,6 @@
 <div class="container">
     <h1 data-subtitle="- Features -" class="section-title">Dotinstall Paneの特徴</h1>
 </div>
-```
-
-### コンテナスタイルの作成
-
-```
-[style.css]
-.container {
-    width: 820px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
 ```
 
 ### セクションタイトルのスタイルを共通化
