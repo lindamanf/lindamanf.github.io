@@ -37,7 +37,7 @@
     <h1 data-subtitle="- Features -">Dotinstall Paneの特徴</h1>
 </div>
 ```
-
+```
 [style.css]
 .container {
     width: 820px;
