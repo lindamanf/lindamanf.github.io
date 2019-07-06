@@ -61,6 +61,17 @@
 </div>
 ```
 
+### コンテナスタイルの作成
+
+```
+[style.css]
+.container {
+    width: 820px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+```
+
 ### セクションタイトルのスタイルを共通化
 
 
@@ -133,17 +144,6 @@
         </div>
     </section>
 </div>
-```
-
-### コンテナスタイルの作成
-
-```
-[style.css]
-.container {
-    width: 820px;
-    margin: 0 auto;
-    padding: 60px 0;
-}
 ```
 
 ## 10 要素を左右に振り分けていこう
